@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>homework</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css">
+</head>
+
+<body for="html-export">
+    <div class="mume markdown-preview  ">
+        <h1 class="mume-header" id="homework">Homework</h1>
+
+        <h2 class="mume-header" id="exercise-1-fibonacci-sequence">Exercise 1: Fibonacci Sequence</h2>
+
+        <ol>
+            <li>
+                <p>Write a class named <code>Fibonacci</code> such that the following code will print the (infinite) Fibonacci sequence starting with 0, 1:</p>
+                <pre data-role="codeBlock" data-info="python" class="language-python"><span class="token keyword keyword-for">for</span> n <span class="token keyword keyword-in">in</span> Fibonacci<span class="token punctuation">(</span>f0<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">,</span> f1<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword keyword-print">print</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span>
+</pre>
+                <p>The Fibonacci sequence is defined as follows:</p>
+                <blockquote>
+                    <p>f<sub>0</sub> = 0<br>
+                        f<sub>1</sub> = 1<br>
+                        f<sub>n</sub> = f<sub>n-1</sub> + f<sub>n-2</sub> for n &gt; 1</p>
+                </blockquote>
+                <p>That is, each term after the first two is the sum of the previous two terms. The first two terms are usually taken to be 0 and 1, but you can
+                    pick any two integers. So the first ten terms are 0, 1, 1, 2, 3, 5, 8, 13, 21, 34.</p>
+            </li>
+            <li>
+                <p>Add to <code>Fibonacci</code> a method <code>ref</code> that returns the n<sup>th</sup> number in the sequence:</p>
+                <pre data-role="codeBlock" data-info="python" class="language-python"><span class="token keyword keyword-class">class</span> <span class="token class-name">Fibonacci</span><span class="token punctuation">:</span>
+    <span class="token triple-quoted-string string">&quot;&quot;&quot;Computes the Fibonacci sequence.&quot;&quot;&quot;</span>
+    <span class="token keyword keyword-def">def</span> <span class="token function">ref</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> n<span class="token punctuation">:</span> <span class="token builtin">int</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token builtin">int</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">&quot;&quot;&quot;Returns the n-th Fibonacci number.&quot;&quot;&quot;</span>
+        <span class="token keyword keyword-pass">pass</span>
+
+</pre>
+            </li>
+            <li>
+                <p>Implement the same Fibonacci sequence as a <em>generator</em> (a function that uses the <code>yield</code> keyword):</p>
+                <pre data-role="codeBlock" data-info="python" class="language-python"><span class="token keyword keyword-from">from</span> typing <span class="token keyword keyword-import">import</span> Iterable
+
+<span class="token keyword keyword-def">def</span> <span class="token function">fibonacci</span><span class="token punctuation">(</span>f0<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">,</span> f1<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> Iterable<span class="token punctuation">[</span><span class="token builtin">int</span><span class="token punctuation">]</span><span class="token punctuation">:</span>
+    <span class="token triple-quoted-string string">&quot;&quot;&quot;Generates the infinite Fibonacci sequence.&quot;&quot;&quot;</span>
+</pre>
+            </li>
+        </ol>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
